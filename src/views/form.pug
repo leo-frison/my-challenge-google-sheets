@@ -1,0 +1,78 @@
+html
+    head
+    title Gran Slam
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    style.
+            body {
+                background-image: url("https://www.mundodeportivo.com/r/GODO/MD/p4/Polideportivo/Imagenes/2017/05/15/Recortada/img_rguillamet_20200114-113111_imagenes_md_otras_fuentes_1-k83G-U44399471251evB-980x554@MundoDeportivo-Web.jpg");
+                margin: auto;
+                text-align: center;
+            }
+
+
+
+            body h1 {
+                 font-size:50px;
+                 color:black;
+                 font-weight: bold;
+                 font-style: italic;
+                 background: green;
+               }
+
+            body div  {
+                font-size:15px;
+                color:yellow;
+                background-color: black;
+                 margin-right: 270px;
+                 margin-left: 270px;
+                 padding: 10px;
+            }
+
+            body div button {
+               border-radius: 4px;
+               background-color: red;
+               border: none;
+               color: yellow;
+               text-align: center;
+               font-size: 20px;
+               padding: 5px;
+               width: 100px;
+               transition: all 0.5s;
+               cursor: pointer;
+               margin: 2px;
+
+            }
+
+            body div button:hover {background-color: #3e8e41}
+
+
+            
+    
+    body
+
+        h1 Grand Slam Champions Registration
+
+        div
+            form(method="post" action="/form")
+                div
+                    label(for="tourney_dates") Championship Dates
+                    p
+                        input(type="text" placeholder="Enter Tournament Year.Month.Day" name="tourney_dates")
+                div
+                    label(for="tourney_name") Tourney
+                    p
+                        input(type="text" placeholder="Enter Tournament Name" name="tourney_name")
+
+                div
+                    label(for="singles_winner_name") Tennis Player Name
+                    p
+                        input(type="text" placeholder="Write Player Name" name="singles_winner_name")
+
+                div
+                    label(for="singles_winner_url") Tennis Player URL
+                    p
+                        input(type="text" placeholder="Enter Player URL" name="singles_winner_url")        
+
+                div
+                    button(type="submit") Save
