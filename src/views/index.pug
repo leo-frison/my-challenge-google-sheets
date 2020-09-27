@@ -15,18 +15,12 @@ html
                  color:black;
                  font-weight: bold;
                  font-style: italic;
-                 background: green;
-               }
-
-            h2 {
-                 margin-right: 520px;
-                 margin-left: 320px;
                  background: white;
-               }   
+               }
 
             h3 button {
                  border-radius: 4px;
-                 background-color: white;
+                 background-color: black;
                  border: none;
                  color: black;
                  text-align: center;
@@ -35,7 +29,7 @@ html
                  width: 200px;
                  transition: all 0.5s;
                  cursor: pointer;
-                 margin: 2px;
+                 margin: 20px;
                }
 
             table {
@@ -44,7 +38,7 @@ html
                  color: yellow;
             }
 
-            h3 button:hover {background-color: #3e8e41}   
+            h3 button:hover {background-color: white}   
     body
         h1 Grand Slam Championship Record 1877-2017   
          h3
@@ -57,7 +51,6 @@ html
         
             
           table(border="10")
-                 h2 &nbsp&nbspDates &nbsp&nbsp|&nbsp&nbsp&nbsp&nbspTournaments&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|&nbspWinners
                  each registro, index in registros
                   tr                
                   td &nbsp&nbsp #{registro.tourney_dates}&nbsp&nbsp&nbsp

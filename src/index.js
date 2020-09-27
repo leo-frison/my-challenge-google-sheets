@@ -5,7 +5,7 @@ const app = require('./app');
 //})
 
 /**SETTINGS */
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 2000);
 
 /**Starting the server */
 app.listen(app.get('port'), () => {
